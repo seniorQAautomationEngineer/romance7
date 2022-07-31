@@ -58,7 +58,7 @@ public class MainTests extends BaseUI{
     @Test
     public void testIframe(){
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        WebElement youtubeIframe = driver.findElement(youtubeFrameLocator);
+        WebElement youtubeIframe = driver.findElement(youtubeFrameLocator); //Locator is updated
         driver.switchTo().frame(youtubeIframe);
         driver.findElement(playYoutubeButton).click();
     }
