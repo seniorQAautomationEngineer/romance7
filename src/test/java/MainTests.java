@@ -24,7 +24,7 @@ public class MainTests extends BaseUI{
     By selectedCapitalOfUkraine = By.xpath("//li[text()='Kiev, Ukraine']");
     By confirmationCheckbox = By.xpath("//input[@id='confirmation']");
     By youtubeFrameLocator = By.xpath("//iframe[@src='https://www.youtube.com/embed/RRECuJzm3IY?start=85']");
-    By playYoutubeButton = By.xpath("//button[@aria-label='Play']");
+    By playYoutubeButton = By.xpath("//button[@class='ytp-large-play-button ytp-button']");
 
     String email = "1111111111111@gmail.com";
     String password = "1234567@";
@@ -57,7 +57,7 @@ public class MainTests extends BaseUI{
 
     @Test
     public void testIframe(){
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement youtubeIframe = driver.findElement(youtubeFrameLocator);
         driver.switchTo().frame(youtubeIframe);
         driver.findElement(playYoutubeButton).click();
