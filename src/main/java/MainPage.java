@@ -15,6 +15,11 @@ public class MainPage extends BaseActions{
         driver.findElement(Locators.REGISTRATION_BUTTON).click();
     }
 
+    public void clickGalleryLink(){
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.GALLERY_LINK)));
+        driver.findElement(Locators.GALLERY_LINK);
+    }
+
     public void switchToYoutubeFrame(){
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         WebElement youtubeIframe = driver.findElement(Locators.youtubeFrameLocator); //Locator is updated

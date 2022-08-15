@@ -14,22 +14,23 @@ public class BaseUI {
     WebDriverWait wait;
     MainPage mainPage;
     RegistrationForm registrationForm;
+    GalleryPage galleryPage;
 
     @BeforeMethod
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.get(url);
-        driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         mainPage = new MainPage(driver, wait);
         registrationForm = new RegistrationForm(driver, wait);
+        galleryPage = new GalleryPage(driver, wait);
+        driver.get(url);
+        driver.manage().window().maximize();
     }
 
 
     @AfterMethod
     public void tearDown() {
-
         //driver.quit();
     }
 }

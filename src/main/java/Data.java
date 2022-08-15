@@ -7,4 +7,7 @@ public class Data {
     public static final String nickname = "al838383";
     public static final String city = "Kiev";
 
+    public static final String  registrationDate = "Registration date";
+    public static final String  registrationDateValue = "date_created";
+
 }
