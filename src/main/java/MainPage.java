@@ -17,7 +17,7 @@ public class MainPage extends BaseActions{
 
     public void clickGalleryLink(){
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(Locators.GALLERY_LINK)));
-        driver.findElement(Locators.GALLERY_LINK);
+        mouseClick(Locators.GALLERY_LINK);
     }
 
     public void switchToYoutubeFrame(){

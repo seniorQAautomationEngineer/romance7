@@ -3,7 +3,8 @@ import org.openqa.selenium.By;
 public class Locators {
 
     //MainPage
-    public static final By GALLERY_LINK = By.xpath(" //a[@href = 'https://romanceabroad.com/users/search']");
+    public static final By GALLERY_LINK = By.xpath("//a[@href = 'https://romanceabroad.com/users/search']");
+    public static final By PHONE_LINK = By.xpath("//a[@href='callto:18885997816']");
 
     //Registration
 
@@ -18,7 +19,9 @@ public class Locators {
     public static final By regionSelect = By.xpath("//div[contains(@id, 'region_select')]");
     public static final By selectedCapitalOfUkraine = By.xpath("//li[text()='Kiev, Ukraine']");
     public static final By confirmationCheckbox = By.xpath("//input[@id='confirmation']");
-    public static final By youtubeFrameLocator = By.xpath("//iframe[@src='https://www.youtube.com/embed/RRECuJzm3IY?start=85']");public static final By playYoutubeButton = By.xpath("//button[@class='ytp-large-play-button ytp-button']");
+    public static final By youtubeFrameLocator = By.xpath("//iframe[@src='https://www.youtube.com/embed/RRECuJzm3IY?start=85']");
+    public static final By playYoutubeButton = By.xpath("//button[@class='ytp-large-play-button ytp-button']");
+    public static final By TAB_LINKS = By.xpath("//a[contains(@class , 'nav-link')]");
 
  //Gallery
    public  static final By  SORT_DROP_DOWN = By.xpath(" //select[contains(@id, 'sorter-select')]");
